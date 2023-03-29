@@ -7,6 +7,16 @@ Masahiro Kaga
 
 <br>
 
+## How to setup and run the app on your local
+Open the terminal, then follow the procedures below.
+- In advance, to install [yarn, postgres] are necessary on your local.
+- Start Postgres database service with running the command 'psql postgres'.
+- Create database and table with commands. The commands were written at /server/database.sql file.
+- Go to the client directory on your terminal and run 'yarn start', then it runs on port 3000.
+Then, change the value on /server/db.js file. "user" should be the name which you set up on Postgres when you installed it. If you already set up the password, enter the password too.
+
+<br>
+
 ## Features of app
 
 - PERN stack.(Postgres, Express, React and Node.js)
@@ -72,3 +82,4 @@ Masahiro Kaga
 - PostgreSQL - It is my first time trying, therefore I quickly learnt it on Youtube before starting assignment.
 - Unit test - About Jest, React Testing Library and MSW(Mock Service Worker), I should get more knowledge and skills on how to handle it. Eventually, I could not complete this task as I could not cope with POST and DELETE for the test.
 - Typescript - This time, I did not use it due to time consuming. I should learn and get used to it.
+- Also I needed to add JSDoc and Containerizing features.
